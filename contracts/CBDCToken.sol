@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract CBDCToken is ERC20, ERC20Burnable, Ownable {
-    constructor() ERC20("Wholesale CBDC", "CBDC") {}
+    constructor() ERC20("Wholesale CBDC", "CBDC") Ownable(msg.sender) {}
 
     function mint(address to, uint256 amount) public onlyOwner {
         _mint(to, amount);

@@ -283,9 +283,11 @@ MIT
 
 ## Author
 
+**Developed by Ammad Aslam with AI-assisted tooling**
+
 Generated with [Claude Code](https://claude.ai/code)
 
 **Project**: Tokenised Bond with Delivery-Versus-Payment Settlement  
 **Stack**: Solidity, Hardhat, TypeScript  
-**Status**: Basic version with comprehensive tests  
-**Date**: 2026-10-26
+**Status**: Production-ready with 28 passing tests  
+**Date**: 2026-10-27

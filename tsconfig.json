@@ -12,7 +12,11 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "paths": {
+      "typechain-types": ["typechain-types/index"],
+      "typechain-types/*": ["typechain-types/*"]
+    }
   },
   "include": ["hardhat.config.ts", "contracts/**/*.ts", "test/**/*.ts", "scripts/**/*.ts"],
   "exclude": ["node_modules", "dist"],

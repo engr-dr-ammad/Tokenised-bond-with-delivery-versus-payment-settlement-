@@ -61,7 +61,7 @@ contract DVPSettlement is ReentrancyGuard, Ownable {
         _;
     }
 
-    constructor(address _cbdcToken, address _bondToken) {
+    constructor(address _cbdcToken, address _bondToken) Ownable(msg.sender) {
         require(_cbdcToken != address(0), "Invalid CBDC token address");
         require(_bondToken != address(0), "Invalid Bond token address");
         cbdcToken = IERC20(_cbdcToken);
